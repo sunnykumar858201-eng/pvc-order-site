@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSH RAJ PVC Card Order</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff0f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #ff0000;
+            color: gold;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff0000;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 15px;
+            background: #ff0000;
+            color: gold;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #cc0000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background: #ffe6e6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>ANSH RAJ PVC CARD ORDER</header>
+
+    <div class="container">
+        <h2>Order Your PVC Card</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required>
+
+            <label for="email">Email (Optional):</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="cardtype">Card Type:</label>
+            <select id="cardtype" name="cardtype" required>
+                <option value="">Select Card Type</option>
+                <option value="single">Single Sided</option>
+                <option value="double">Double Sided</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Number of Cards" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" placeholder="Full address for delivery" rows="4" required></textarea>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <footer>© 2026 ANSH RAJ INTERNET POINT | All Rights Reserved</footer>
+
+</body>
+</html>
